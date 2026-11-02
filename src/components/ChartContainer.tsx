@@ -17,13 +17,13 @@ export function ChartContainer({
 }: ChartContainerProps) {
   return (
     <div className="w-full max-w-6xl mx-auto flex flex-col justify-center">
-      {/* Header section */}
+      {/* Header section matching Dashboard bold styling */}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
         <div className="max-w-4xl">
-          <h1 className="text-xl sm:text-2xl md:text-[26px] font-semibold text-[#1DB954] tracking-tight leading-snug mb-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#1DB954] tracking-tight leading-snug mb-2">
             {title}
           </h1>
-          <p className="text-sm sm:text-[15px] italic text-[#CCCCCC] font-normal leading-relaxed">
+          <p className="text-sm sm:text-base italic text-[#CCCCCC] font-normal leading-relaxed">
             {description}
           </p>
         </div>
