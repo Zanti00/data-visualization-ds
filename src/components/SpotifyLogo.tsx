@@ -1,15 +1,19 @@
 import React from "react";
 
-export function SpotifyLogo({ className = "w-6 h-6" }: { className?: string }) {
+export function AppLogo({ className = "w-7 h-7" }: { className?: string }) {
   return (
-    <div className={`rounded-full bg-[#1DB954] flex items-center justify-center p-1 shrink-0 ${className}`}>
-      <svg
-        viewBox="0 0 24 24"
-        fill="#000000"
-        className="w-full h-full"
-      >
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.496 17.306c-.215.353-.675.466-1.028.25-2.813-1.718-6.353-2.107-10.523-1.155-.403.093-.804-.162-.896-.565-.093-.404.161-.804.565-.897 4.569-1.042 8.487-.597 11.632 1.339.353.215.466.674.25 1.028zm1.468-3.262c-.27.439-.844.58-1.282.31-3.22-1.979-8.127-2.55-11.935-1.393-.496.15-1.024-.134-1.175-.63-.15-.495.134-1.023.63-1.174 4.354-1.321 9.775-.682 13.452 1.58.438.27.58.843.31 1.282zm.126-3.41c-3.86-2.292-10.228-2.503-13.905-1.387-.592.18-1.22-.164-1.399-.757-.18-.593.164-1.22.756-1.4 4.232-1.284 11.264-1.037 15.702 1.6c.53.315.705 1.004.39 1.534-.314.53-1.004.706-1.534.39z" />
-      </svg>
+    <div
+      className={`relative rounded-full overflow-hidden shrink-0 flex items-center justify-center ${className}`}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/logo.png"
+        alt="Data Science - Data Visualization Logo"
+        className="w-full h-full object-contain select-none pointer-events-none"
+      />
     </div>
   );
 }
+
+// Retain alias for seamless backwards compatibility
+export { AppLogo as SpotifyLogo };

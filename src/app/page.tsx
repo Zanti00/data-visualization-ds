@@ -43,7 +43,7 @@ export default function Home() {
         )}
       </div>
 
-      {/* Footer strictly with SpotiBai brand */}
+      {/* Footer with Data Science - Data Visualization brand */}
       <Footer />
     </main>
   );
