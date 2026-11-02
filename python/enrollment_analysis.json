@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "source": "UP Diliman Office of the University Registrar (OUR)",
+    "timeframe": "2016\u20132026",
+    "programs": {
+      "BS_CS": "BS Computer Science",
+      "BS_ChE": "BS Chemical Engineering",
+      "BS_IE": "BS Industrial Engineering",
+      "BS_ME": "BS Mechanical Engineering",
+      "BS_ECE": "BS Electronics Engineering"
+    },
+    "labels": {
+      "BS_CS": "BSCS",
+      "BS_ChE": "BSChE",
+      "BS_IE": "BSIE",
+      "BS_ME": "BSME",
+      "BS_ECE": "BSECE"
+    },
+    "palette": {
+      "green": "#1DB954",
+      "dark1": "#212121",
+      "dark2": "#121212",
+      "gray1": "#535353",
+      "gray2": "#B3B3B3",
+      "bg": "#0D0F12"
+    }
+  },
+  "interpretations": {
+    "dataset": {
+      "title": "Enrollment trends of five BS engineering and computing programs at UP Diliman, 2016\u20132026.",
+      "description": "Explore program size, share of enrollment, yearly trends, and how programs move together."
+    },
+    "bar": {
+      "title": "Student Population by Program (2026)",
+      "description": "This chart compares the number of enrolled students in each of the five programs in 2026. CS leads with 538 students, followed by ECE (504), IE (479), ChE (447), and ME (319). ME is clearly the smallest program, with about 220 fewer students than CS."
+    },
+    "line": {
+      "title": "Enrollment Trend by Program (2016\u20132026)",
+      "description": "This chart tracks yearly enrollment for each program over 11 years. All programs dropped after 2016, and total enrollment bottomed out at 1,977 in 2018. CS then grew steadily, peaking at 581 in 2024, and IE rose to its highest level (479) in 2026. ECE, ChE, and ME recovered only partly and remain below their 2016 levels."
+    },
+    "pie": {
+      "title": "Share of Total Enrollment by Program (2026)",
+      "description": "This chart shows each program\u2019s percentage of the 2,287 students enrolled across the five programs in 2026. CS holds the largest share (23.5%), then ECE (22.0%), IE (20.9%), ChE (19.5%), and ME (13.9%). Four programs are fairly close in size, while ME\u2019s slice is noticeably smaller."
+    },
+    "heatmap": {
+      "title": "Enrollment Correlation Between Programs",
+      "description": "This chart shows how closely the yearly enrollment of each pair of programs moves together, from -1 (opposite directions) to +1 (same direction). The strongest links are ChE with ECE (0.84), ChE with ME (0.77), and CS with IE (0.76). CS has a weak negative relationship with ECE (-0.26) and almost none with ChE (-0.02). With only 11 years of data, these are patterns to investigate, not proof of cause."
+    }
+  },
+  "raw_csv": "Year,BS_CS,BS_ChE,BS_IE,BS_ME,BS_ECE\r\n2016,433,542,456,375,637\r\n2017,346,442,386,330,530\r\n2018,340,447,371,322,497\r\n2019,390,410,343,325,517\r\n2020,421,411,361,326,520\r\n2021,465,471,411,366,548\r\n2022,522,476,420,376,541\r\n2023,555,449,428,356,493\r\n2024,581,440,451,350,493\r\n2025,556,410,469,325,496\r\n2026,538,447,479,319,504\r\n",
+  "yearly_data": [
+    {
+      "Year": 2016,
+      "BS_CS": 433,
+      "BS_ChE": 542,
+      "BS_IE": 456,
+      "BS_ME": 375,
+      "BS_ECE": 637,
+      "Total": 2443
+    },
+    {
+      "Year": 2017,
+      "BS_CS": 346,
+      "BS_ChE": 442,
+      "BS_IE": 386,
+      "BS_ME": 330,
+      "BS_ECE": 530,
+      "Total": 2034
+    },
+    {
+      "Year": 2018,
+      "BS_CS": 340,
+      "BS_ChE": 447,
+      "BS_IE": 371,
+      "BS_ME": 322,
+      "BS_ECE": 497,
+      "Total": 1977
+    },
+    {
+      "Year": 2019,
+      "BS_CS": 390,
+      "BS_ChE": 410,
+      "BS_IE": 343,
+      "BS_ME": 325,
+      "BS_ECE": 517,
+      "Total": 1985
+    },
+    {
+      "Year": 2020,
+      "BS_CS": 421,
+      "BS_ChE": 411,
+      "BS_IE": 361,
+      "BS_ME": 326,
+      "BS_ECE": 520,
+      "Total": 2039
+    },
+    {
+      "Year": 2021,
+      "BS_CS": 465,
+      "BS_ChE": 471,
+      "BS_IE": 411,
+      "BS_ME": 366,
+      "BS_ECE": 548,
+      "Total": 2261
+    },
+    {
+      "Year": 2022,
+      "BS_CS": 522,
+      "BS_ChE": 476,
+      "BS_IE": 420,
+      "BS_ME": 376,
+      "BS_ECE": 541,
+      "Total": 2335
+    },
+    {
+      "Year": 2023,
+      "BS_CS": 555,
+      "BS_ChE": 449,
+      "BS_IE": 428,
+      "BS_ME": 356,
+      "BS_ECE": 493,
+      "Total": 2281
+    },
+    {
+      "Year": 2024,
+      "BS_CS": 581,
+      "BS_ChE": 440,
+      "BS_IE": 451,
+      "BS_ME": 350,
+      "BS_ECE": 493,
+      "Total": 2315
+    },
+    {
+      "Year": 2025,
+      "BS_CS": 556,
+      "BS_ChE": 410,
+      "BS_IE": 469,
+      "BS_ME": 325,
+      "BS_ECE": 496,
+      "Total": 2256
+    },
+    {
+      "Year": 2026,
+      "BS_CS": 538,
+      "BS_ChE": 447,
+      "BS_IE": 479,
+      "BS_ME": 319,
+      "BS_ECE": 504,
+      "Total": 2287
+    }
+  ],
+  "data_2026": {
+    "total": 2287,
+    "breakdown": [
+      {
+        "program": "BS_CS",
+        "label": "BSCS",
+        "name": "BS Computer Science",
+        "count": 538,
+        "share_pct": 23.5
+      },
+      {
+        "program": "BS_ChE",
+        "label": "BSChE",
+        "name": "BS Chemical Engineering",
+        "count": 447,
+        "share_pct": 19.5
+      },
+      {
+        "program": "BS_IE",
+        "label": "BSIE",
+        "name": "BS Industrial Engineering",
+        "count": 479,
+        "share_pct": 20.9
+      },
+      {
+        "program": "BS_ME",
+        "label": "BSME",
+        "name": "BS Mechanical Engineering",
+        "count": 319,
+        "share_pct": 13.9
+      },
+      {
+        "program": "BS_ECE",
+        "label": "BSECE",
+        "name": "BS Electronics Engineering",
+        "count": 504,
+        "share_pct": 22.0
+      }
+    ]
+  },
+  "correlation_matrix": {
+    "programs": [
+      "BSCS",
+      "BSChE",
+      "BSIE",
+      "BSME",
+      "BSECE"
+    ],
+    "values": [
+      [
+        1.0,
+        -0.02,
+        0.76,
+        0.29,
+        -0.26
+      ],
+      [
+        -0.02,
+        1.0,
+        0.37,
+        0.77,
+        0.84
+      ],
+      [
+        0.76,
+        0.37,
+        1.0,
+        0.27,
+        0.11
+      ],
+      [
+        0.29,
+        0.77,
+        0.27,
+        1.0,
+        0.62
+      ],
+      [
+        -0.26,
+        0.84,
+        0.11,
+        0.62,
+        1.0
+      ]
+    ]
+  },
+  "summary_stats": {
+    "total_2016": 2443,
+    "total_2026": 2287,
+    "trough_year": 2018,
+    "trough_total": 1977,
+    "cs_peak_year": 2024,
+    "cs_peak_value": 581,
+    "ie_peak_year": 2026,
+    "ie_peak_value": 479
+  }
+}
