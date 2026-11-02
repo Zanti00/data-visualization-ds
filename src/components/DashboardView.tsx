@@ -8,21 +8,17 @@ import { HeatMapView } from "./HeatMapView";
 import analysisData from "@/data/enrollment_analysis.json";
 
 export function DashboardView() {
-  const stats = analysisData.summary_stats;
   const data2026 = analysisData.data_2026;
   const interpretations = analysisData.interpretations;
 
   return (
-    <div className="w-full flex flex-col gap-8 pb-8 min-w-0">
-      {/* Executive Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+    <div className="w-full flex flex-col gap-6 pb-8 min-w-0">
+      {/* Executive Header - Clean without explanation */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-white/10 pb-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#1DB954] tracking-tight mb-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#1DB954] tracking-tight">
             Data Science - Data Visualization
           </h1>
-          <p className="text-sm sm:text-base italic text-[#CCCCCC] font-light max-w-3xl leading-relaxed">
-            Unified executive dashboard displaying student populations, percentage distributions, 11-year longitudinal trends, and statistical correlation matrix for UP Diliman.
-          </p>
         </div>
         <div className="text-xs font-mono text-[#888888] shrink-0 text-left md:text-right">
           <div>UP Diliman • OUR Data (2016–2026)</div>
@@ -81,22 +77,19 @@ export function DashboardView() {
         </div>
       </div>
 
-      {/* Grid of All Visual Graphs */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 min-w-0">
+      {/* Grid of All Visual Graphs - Only Visual Graphs and Titles */}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 min-w-0">
         {/* Graph 1: Bar Chart */}
         <section
           aria-label={interpretations.bar.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-5 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
-          <div className="mb-4">
-            <h2 className="text-lg font-bold text-[#1DB954] mb-1">
+          <div className="mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-[#1DB954]">
               {interpretations.bar.title}
             </h2>
-            <p className="text-xs sm:text-[13px] italic text-[#CCCCCC] leading-relaxed">
-              {interpretations.bar.description}
-            </p>
           </div>
-          <div className="pt-2 min-w-0">
+          <div className="min-w-0">
             <BarChartView />
           </div>
         </section>
@@ -104,17 +97,14 @@ export function DashboardView() {
         {/* Graph 2: Pie Chart */}
         <section
           aria-label={interpretations.pie.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-5 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
-          <div className="mb-4">
-            <h2 className="text-lg font-bold text-[#1DB954] mb-1">
+          <div className="mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-[#1DB954]">
               {interpretations.pie.title}
             </h2>
-            <p className="text-xs sm:text-[13px] italic text-[#CCCCCC] leading-relaxed">
-              {interpretations.pie.description}
-            </p>
           </div>
-          <div className="pt-2 min-w-0">
+          <div className="min-w-0">
             <PieChartView />
           </div>
         </section>
@@ -122,17 +112,14 @@ export function DashboardView() {
         {/* Graph 3: Line Chart */}
         <section
           aria-label={interpretations.line.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-5 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
-          <div className="mb-4">
-            <h2 className="text-lg font-bold text-[#1DB954] mb-1">
+          <div className="mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-[#1DB954]">
               {interpretations.line.title}
             </h2>
-            <p className="text-xs sm:text-[13px] italic text-[#CCCCCC] leading-relaxed">
-              {interpretations.line.description}
-            </p>
           </div>
-          <div className="pt-2 min-w-0">
+          <div className="min-w-0">
             <LineChartView />
           </div>
         </section>
@@ -140,17 +127,14 @@ export function DashboardView() {
         {/* Graph 4: Heat Map */}
         <section
           aria-label={interpretations.heatmap.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-5 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
-          <div className="mb-4">
-            <h2 className="text-lg font-bold text-[#1DB954] mb-1">
+          <div className="mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-[#1DB954]">
               {interpretations.heatmap.title}
             </h2>
-            <p className="text-xs sm:text-[13px] italic text-[#CCCCCC] leading-relaxed">
-              {interpretations.heatmap.description}
-            </p>
           </div>
-          <div className="pt-2 min-w-0">
+          <div className="min-w-0">
             <HeatMapView />
           </div>
         </section>
