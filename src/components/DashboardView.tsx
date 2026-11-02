@@ -13,7 +13,7 @@ export function DashboardView() {
   const interpretations = analysisData.interpretations;
 
   return (
-    <div className="w-full flex flex-col gap-8 pb-8">
+    <div className="w-full flex flex-col gap-8 pb-8 min-w-0">
       {/* Executive Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
         <div>
@@ -82,11 +82,11 @@ export function DashboardView() {
       </div>
 
       {/* Grid of All Visual Graphs */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 min-w-0">
         {/* Graph 1: Bar Chart */}
         <section
           aria-label={interpretations.bar.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-5 sm:p-6 flex flex-col justify-between shadow-xl"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
           <div className="mb-4">
             <h2 className="text-lg font-bold text-[#1DB954] mb-1">
@@ -96,7 +96,7 @@ export function DashboardView() {
               {interpretations.bar.description}
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 min-w-0">
             <BarChartView />
           </div>
         </section>
@@ -104,7 +104,7 @@ export function DashboardView() {
         {/* Graph 2: Pie Chart */}
         <section
           aria-label={interpretations.pie.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-5 sm:p-6 flex flex-col justify-between shadow-xl"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
           <div className="mb-4">
             <h2 className="text-lg font-bold text-[#1DB954] mb-1">
@@ -114,7 +114,7 @@ export function DashboardView() {
               {interpretations.pie.description}
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 min-w-0">
             <PieChartView />
           </div>
         </section>
@@ -122,7 +122,7 @@ export function DashboardView() {
         {/* Graph 3: Line Chart */}
         <section
           aria-label={interpretations.line.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-5 sm:p-6 flex flex-col justify-between shadow-xl"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
           <div className="mb-4">
             <h2 className="text-lg font-bold text-[#1DB954] mb-1">
@@ -132,7 +132,7 @@ export function DashboardView() {
               {interpretations.line.description}
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 min-w-0">
             <LineChartView />
           </div>
         </section>
@@ -140,7 +140,7 @@ export function DashboardView() {
         {/* Graph 4: Heat Map */}
         <section
           aria-label={interpretations.heatmap.title}
-          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-5 sm:p-6 flex flex-col justify-between shadow-xl"
+          className="border border-[#1DB954] rounded-sm bg-[#0A0B0E]/95 p-4 sm:p-6 flex flex-col justify-between shadow-xl min-w-0 overflow-hidden"
         >
           <div className="mb-4">
             <h2 className="text-lg font-bold text-[#1DB954] mb-1">
@@ -150,7 +150,7 @@ export function DashboardView() {
               {interpretations.heatmap.description}
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 min-w-0">
             <HeatMapView />
           </div>
         </section>
