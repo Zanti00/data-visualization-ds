@@ -1,4 +1,5 @@
 import React from "react";
+import { AppLogo } from "./SpotifyLogo";
 
 export function Footer() {
   return (
@@ -6,8 +7,11 @@ export function Footer() {
       <div className="text-[#666666]">
         UP Diliman • Data Science Laboratory
       </div>
-      <div className="text-[#1DB954] font-bold text-sm tracking-tight select-none">
-        SpotiBai
+      <div className="flex items-center gap-2 select-none">
+        <AppLogo className="w-4 h-4" />
+        <span className="text-[#1DB954] font-bold text-sm tracking-tight">
+          Data Science - Data Visualization
+        </span>
       </div>
     </footer>
   );

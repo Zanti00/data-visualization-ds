@@ -18,7 +18,7 @@ export function DashboardView() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-[#1DB954] tracking-tight mb-2">
-            SpotiBai Enrollment Analytics Dashboard
+            Data Science - Data Visualization
           </h1>
           <p className="text-sm sm:text-base italic text-[#CCCCCC] font-light max-w-3xl leading-relaxed">
             Unified executive dashboard displaying student populations, percentage distributions, 11-year longitudinal trends, and statistical correlation matrix for UP Diliman.
